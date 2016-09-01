@@ -33,6 +33,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			float: right;
 			color: whitesmoke;
 		}
+		.boundary{
+			height: 2px;
+			width: 100%; 
+			background-color: #D0CECE; 
+			text-align: center;
+			float:right;
+			}
 	</style>
 
 	<body>
@@ -48,25 +55,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="cd-timeline-block">
 							<div class="cd-timeline-img cd-picture"></div>
 
-							<span class="cd-date">2016-08-12</span>
+							<span class="cd-date">2016-01</span>
 
 						</div>
 
 						<div class="cd-timeline-block">
 							<div class="cd-timeline-img cd-movie"></div>
-							<span class="cd-date">2016-08-11</span>
+							<span class="cd-date">2016-02</span>
 
 						</div>
 
 						<div class="cd-timeline-block">
 							<div class="cd-timeline-img cd-picture"></div>
-							
-							<span class="cd-date">2016-08-10</span>
+
+							<span class="cd-date">2016-03</span>
 
 						</div>
 
 					</section>
-					
+
 				</div>
 			</div>
 		</div>
@@ -120,6 +127,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</a>
 			</div>
+            
+			<div class="boundary" />
+            
+             
+            
+            
 			<div class="content-grid">
 				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
 					<img src="img/2016-08-10.jpg" />
@@ -144,6 +157,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</a>
 			</div>
+			
+			<div class="boundary"  />
+			
 			<div class="content-grid">
 				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
 					<img src="img/2016-09-12.jpg" />
@@ -344,30 +360,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		<script type="text/javascript">
 			$(function() {
-				
+
 				var contentTags = $(".content ").find(".content-grid");
 				var dateArray = new Array();
 				contentTags.each(function() {
 					var img = $(this).find("img")
 					if(img != undefined) {
 						var src = img.attr("src");
-						var reg = new RegExp(/\d{4}-\d{2}-\d{2}/);
+						//var reg = new RegExp(/\d{4}-\d{2}-\d{2}/);
+						var reg = new RegExp(/\d{4}-\d{2}/);
 						var date = reg.exec(src);
 						dateArray.push(date);
 					}
 				});
 				//得到不重复的时间
 				dateArray = unique(dateArray);
-                var timeLineHtml="";
-                //拼装时间轴节点
-				dateArray.forEach(function(item){
+				var timeLineHtml = "";
+				//拼装时间轴节点
+				dateArray.forEach(function(item) {
 					console.log(item);
-				   timeLineHtml+="<div class='cd-timeline-block'><div class='cd-timeline-img cd-picture'></div><span class='cd-date'>"+item+"</span></div>";
+					timeLineHtml += "<div class='cd-timeline-block'><div class='cd-timeline-img cd-picture'></div><span class='cd-date'>" + item + "</span></div>";
 				})
 				$(".cd-container").append(timeLineHtml);
 
 			});
-			
+
 			//数组快速去重
 			function unique(arr) {
 				var result = [],
