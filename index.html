@@ -42,7 +42,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			text-align: center;
 			float: right;
 			line-height: 30px;
-			;
 			line-height: 0px;
 			font-size: 30px;
 			color: #8F8E8E;
@@ -53,16 +52,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			background: #3c4252;
 			opacity: 1;
 			width:100%;
-			min-height: 126px;
+			min-height: 121px;
 		}
 		
 		.time {
+			text-align: center;
 			color: #FFFFFF;
-			font-size: 30px;
+			font-size: 25px;
 			filter: alpha(opacity=90);
 			-moz-opacity: 0.9;
 			-khtml-opacity: 0.9;
 			opacity: 0.9;
+		}
+		.day{
+			font-size: 25px;
 		}
 		
 		.blur {
@@ -121,6 +124,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div id="divlovetime" class="time"> </div>
 				<div id="divmarrytime" class="time"></div>
 				<div id="divbabybirthtime" class="time"></div>
+				<div class="time">时间一秒一秒的在走，我陪你一起走下去!</div>
 			</div>
 			<div class='content-grid'>
 				<img src='img/2016-08-17319.jpg' /></div>
@@ -185,9 +189,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				var marrytime = $("#marrytime").val();
 				var babybirthtime = $("#babybirthtime").val();
 
-				$("#divlovetime").text("" + dateDiff(lovetime));
-				$("#divmarrytime").text("" + dateDiff(marrytime));
-				$("#divbabybirthtime").text("" + dateDiff(babybirthtime));
+				$("#divlovetime").text("已经一起走过了 " + dateDiff(lovetime));
+				$("#divmarrytime").text("结婚到现在已经 " + dateDiff(marrytime));
+				$("#divbabybirthtime").text("宝贝出生也已经 " + dateDiff(babybirthtime));
+//				var text ="时间一秒一秒的在走，我陪你一起走下去"
+//				$("#addTime").text(text);
 			}
 
 			function dateDiff(startdate) {
@@ -209,7 +215,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				var leave3 = leave2 % (60 * 1000) //计算分钟数后剩余的毫秒数  
 				var seconds = Math.round(leave3 / 1000)
 
-				var result = days + "天" + hours + "时" + minutes + "分" + seconds + "秒"
+				var result = days + " 天 " + hours + " 时 " + minutes + " 分 " + seconds + " 秒 "
 
 				return result;
 			}
