@@ -41,7 +41,7 @@ body a{
 .header-left{
 	width:20%;
 	float:left;
-	background:#242b2e;
+	background:#3c4252;
 	min-height: 972px;
 	position:fixed;
 	top:0px;
@@ -187,11 +187,11 @@ p.footer-class a:hover{
 	position: relative;
 	}
 .content-grid{
-	float:right;
+	float:left;
 	width:30%;
 	margin:20px;
 	min-height: 400px;
-}
+	}
 /*--------------------------------------*/
 .b-link-stripe{
 	position:relative;
@@ -2103,8 +2103,10 @@ Modules - reusable parts of our design
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
+  max-height: 800px;;
   max-width: 1170px;
   margin: 0 auto;
+  overflow-y: auto;
 }
 .cd-container::after {
   /* clearfix */
@@ -2149,6 +2151,7 @@ Main components
 .cd-timeline-block {
   position: relative;
   margin: 2em 0;
+  cursor: pointer;
 }
 .cd-timeline-block:after {
   content: "";
@@ -2193,7 +2196,7 @@ Main components
   margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: #75ce66;
+  background: #00D2CA;
 }
 .cd-timeline-img.cd-movie {
   background: #c03b44;

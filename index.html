@@ -31,15 +31,65 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<style type="text/css">
 		.cd-date {
 			float: right;
-			color: whitesmoke;
+			color: #E2E0E0;
+			font-size: 15px;
 		}
-		.boundary{
+		
+		.boundary {
 			height: 2px;
-			width: 100%; 
-			background-color: #D0CECE; 
+			width: 100%;
+			text-shadow:5px 20px 15px #8f8e8e;
 			text-align: center;
-			float:right;
-			}
+			float: right;
+			line-height: 30px;;
+			line-height: 0px;
+			font-size: 30px;
+			color:#8F8E8E;
+			margin-bottom: 30px;
+		}
+		.banner{
+			background: #3c4252; 
+			opacity: 1;
+		}
+		.time {
+			color: #FFFFFF;
+			font-size: 30px;
+			filter: alpha(opacity=90);
+			-moz-opacity: 0.9;
+			-khtml-opacity: 0.9;
+			opacity: 0.9;
+		}
+		
+		.blur {
+			-webkit-filter: blur(5px);
+			/* Chrome, Opera */
+			-moz-filter: blur(5px);
+			-ms-filter: blur(5px);
+			filter: blur(5px);
+		}
+		
+		.content-grid:hover {}
+		
+.cd-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+}
+
+.cd-container::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+.cd-container::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #31B0D5 ;
+}
+		
 	</style>
 
 	<body>
@@ -52,25 +102,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="top-nav">
 
 					<section id="cd-timeline" class="cd-container">
-						<div class="cd-timeline-block">
-							<div class="cd-timeline-img cd-picture"></div>
-
-							<span class="cd-date">2016-01</span>
-
-						</div>
-
-						<div class="cd-timeline-block">
-							<div class="cd-timeline-img cd-movie"></div>
-							<span class="cd-date">2016-02</span>
-
-						</div>
-
-						<div class="cd-timeline-block">
-							<div class="cd-timeline-img cd-picture"></div>
-
-							<span class="cd-date">2016-03</span>
-
-						</div>
 
 					</section>
 
@@ -81,217 +112,134 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!--图片内容-->
 		<div class="content">
-			<div id="addTime" style="width:100%;min-height: 300px; background-color: #E4B9B9;">
+			<div id="addTime" class="banner" style="width:100%;min-height: 126px;">
 				<input id="lovetime" type="hidden" value="2010-06-12" />
 				<input id="marrytime" type="hidden" value="2014-09-28" />
 				<input id="babybirthtime" type="hidden" value="2015-06-1 00:40:00" />
 
-				<div id="divlovetime"> </div>
-				<div id="divmarrytime"></div>
-				<div id="divbabybirthtime"></div>
+				<div id="divlovetime" class="time"> </div>
+				<div id="divmarrytime" class="time"></div>
+				<div id="divbabybirthtime" class="time"></div>
 			</div>
+			<div class='content-grid'>
+				<img src='img/2016-08-17976.jpg' />
 
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-04-16.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
+			</div>
+			<div class='content-grid'>
+				<a class='b-link-stripe b-animate-go  thickbox'>
+					<img src='img/2016-08-09993.jpg' />
+					<div class='b-wrapper'>
+						<h2 class='b-animate b-from-left b-delay03 '>
+        <p>development, mobile</p>
+        <i>
+        </i>
+      </h2>
 					</div>
 				</a>
 			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-05-09.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
+			<div id='2016-08' class='boundary'>2016-08 月</div>
+			<div class='content-grid'>
+				<a class='b-link-stripe b-animate-go  thickbox'>
+					<img src='img/2016-07-140.jpg' />
+					<div class='b-wrapper'>
+						<h2 class='b-animate b-from-left b-delay03 '>
+        <p>development, mobile</p>
+        <i>
+        </i>
+      </h2>
 					</div>
 				</a>
 			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-07-05.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
+			<div id='2016-07' class='boundary'>2016-07 月</div>
+			<div class='content-grid'>
+				<a class='b-link-stripe b-animate-go  thickbox'>
+					<img src='img/2016-06-2920.jpg' />
+					<div class='b-wrapper'>
+						<h2 class='b-animate b-from-left b-delay03 '>
+        <p>development, mobile</p>
+        <i>
+        </i>
+      </h2>
 					</div>
 				</a>
 			</div>
-            
-			<div class="boundary" />
-            
-             
-            
-            
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-08-10.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
+			<div class='content-grid'>
+				<a class='b-link-stripe b-animate-go  thickbox'>
+					<img src='img/2016-06-2126.jpg' />
+					<div class='b-wrapper'>
+						<h2 class='b-animate b-from-left b-delay03 '>
+        <p>development, mobile</p>
+        <i>
+        </i>
+      </h2>
 					</div>
 				</a>
 			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-09-10.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
+			<div id='2016-06' class='boundary'>2016-06 月</div>
+			<div class='content-grid'>
+				<a class='b-link-stripe b-animate-go  thickbox'>
+					<img src='img/2016-05-1133.jpg' />
+					<div class='b-wrapper'>
+						<h2 class='b-animate b-from-left b-delay03 '>
+        <p>development, mobile</p>
+        <i>
+        </i>
+      </h2>
 					</div>
 				</a>
 			</div>
-			
-			<div class="boundary"  />
-			
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-09-12.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
+			<div class='content-grid'>
+				<a class='b-link-stripe b-animate-go  thickbox'>
+					<img src='img/2016-05-0440.jpg' />
+					<div class='b-wrapper'>
+						<h2 class='b-animate b-from-left b-delay03 '>
+        <p>development, mobile</p>
+        <i>
+        </i>
+      </h2>
 					</div>
 				</a>
 			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-09-15.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
+			<div id='2016-05' class='boundary'>2016-05 月</div>
+			<div class='content-grid'>
+				<a class='b-link-stripe b-animate-go  thickbox'>
+					<img src='img/2016-04-2046.jpg' />
+					<div class='b-wrapper'>
+						<h2 class='b-animate b-from-left b-delay03 '>
+        <p>development, mobile</p>
+        <i>
+        </i>
+      </h2>
 					</div>
 				</a>
 			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-11-11.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
+			<div id='2016-04' class='boundary'>2016-04 月</div>
+			<div class='content-grid'>
+				<a class='b-link-stripe b-animate-go  thickbox'>
+					<img src='img/2016-02-1753.jpg' />
+					<div class='b-wrapper'>
+						<h2 class='b-animate b-from-left b-delay03 '>
+        <p>development, mobile</p>
+        <i>
+        </i>
+      </h2>
 					</div>
 				</a>
 			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-11-20.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
+			<div id='2016-02' class='boundary'>2016-02 月</div>
+			<div class='content-grid'>
+				<a class='b-link-stripe b-animate-go  thickbox'>
+					<img src='img/2016-01-2059.jpg' />
+					<div class='b-wrapper'>
+						<h2 class='b-animate b-from-left b-delay03 '>
+        <p>development, mobile</p>
+        <i>
+        </i>
+      </h2>
 					</div>
 				</a>
 			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-12-03.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
-					</div>
-				</a>
-			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-12-03.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
-					</div>
-				</a>
-			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-12-03.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
-					</div>
-				</a>
-			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-12-03.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
-					</div>
-				</a>
-			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-12-03.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
-					</div>
-				</a>
-			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-12-03.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
-					</div>
-				</a>
-			</div>
-			<div class="content-grid">
-				<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
-					<img src="img/2016-12-03.jpg" />
-					<div class="b-wrapper">
-						<h2 class="b-animate b-from-left    b-delay03 ">
-								<span>Cool App Design</span>
-								<p>development, mobile</p>
-								<i> </i>
-							</h2>
-					</div>
-				</a>
-			</div>
+			<div id='2016-01' class='boundary'>2016-01 月</div>
 			<div class="clear"> </div>
 
 		</div>
@@ -328,9 +276,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				var marrytime = $("#marrytime").val();
 				var babybirthtime = $("#babybirthtime").val();
 
-				$("#divlovetime").text(":" + dateDiff(lovetime));
-				$("#divmarrytime").text(":" + dateDiff(marrytime));
-				$("#divbabybirthtime").text(":" + dateDiff(babybirthtime));
+				$("#divlovetime").text("" + dateDiff(lovetime));
+				$("#divmarrytime").text("" + dateDiff(marrytime));
+				$("#divbabybirthtime").text("" + dateDiff(babybirthtime));
 			}
 
 			function dateDiff(startdate) {
@@ -360,31 +308,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		<script type="text/javascript">
 			$(function() {
-
-				var contentTags = $(".content ").find(".content-grid");
-				var dateArray = new Array();
-				contentTags.each(function() {
-					var img = $(this).find("img")
-					if(img != undefined) {
-						var src = img.attr("src");
-						//var reg = new RegExp(/\d{4}-\d{2}-\d{2}/);
-						var reg = new RegExp(/\d{4}-\d{2}/);
-						var date = reg.exec(src);
-						dateArray.push(date);
-					}
+				//时间轴生成
+				var boundary = $(".content").find(".boundary");
+				boundary.each(function() {
+					var id = $(this).attr("id");
+					var timeLineHtml = "<div class='cd-timeline-block'><div class='cd-timeline-img cd-picture'></div><span class='cd-date'>" + id + "</span></div>"
+					$(".cd-container").append(timeLineHtml);
 				});
-				//得到不重复的时间
-				dateArray = unique(dateArray);
-				var timeLineHtml = "";
-				//拼装时间轴节点
-				dateArray.forEach(function(item) {
-					console.log(item);
-					timeLineHtml += "<div class='cd-timeline-block'><div class='cd-timeline-img cd-picture'></div><span class='cd-date'>" + item + "</span></div>";
-				})
-				$(".cd-container").append(timeLineHtml);
+
+				$(".cd-timeline-block").on("click", function() {
+					var id = $(this).find(".cd-date").text();
+					console.log(id);
+					click_scroll(id)
+				});
 
 			});
 
+			//点时间轴定位
+			function click_scroll(id) {
+				//var id = $(this).text();
+				var scroll_offset = $("#" + id).offset();
+				console.log(scroll_offset.top);
+				$("body,html").animate({
+					scrollTop: scroll_offset.top //让body的scrollTop等于pos的top，就实现了滚动
+				}, 1000);
+
+			}
 			//数组快速去重
 			function unique(arr) {
 				var result = [],
@@ -399,6 +348,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				return result;
 			}
 		</script>
+
 	</body>
 
 </html>
